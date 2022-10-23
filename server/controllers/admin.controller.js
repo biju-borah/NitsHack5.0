@@ -46,18 +46,19 @@ module.exports = {
 
         for (const elem of objects) {
             weight += elem.weight;
-
-            if(elem.composition.biodegradable !== null) {
-                console.log('bio not null');
+            if(elem.composition.biodegradable === undefined) {
+                console.log('bio null');
+            }else {
                 biodegradable += elem.composition.biodegradable;
             }
-            
-            if(elem.composition.nonbiodegradable !== null) {
-                console.log('non bio null');    
+
+            if(elem.composition.nonbiodegradable === null) {
+                console.log('non bio null');
+            } else {
                 bottle += elem.composition.nonbiodegradable.bottle*elem.weight/100;
                 metal += elem.composition.nonbiodegradable.metal*elem.weight/100;
                 glass += elem.composition.nonbiodegradable.glass*elem.weight/100;
-                plastic += elem.composition.nonbiodegradable.plastic*elem.weight/100;   
+                plastic += elem.composition.nonbiodegradable.plastic*elem.weight/100;
             }
         }
 
@@ -68,7 +69,6 @@ module.exports = {
         plastic /= weight/100;
 
         res.status(200).json({
-            allDustbins: objects,
             weight: weight,
             composition: {
                 biodegradable: biodegradable,
