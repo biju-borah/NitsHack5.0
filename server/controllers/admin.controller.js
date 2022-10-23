@@ -69,6 +69,7 @@ module.exports = {
         plastic /= weight/100;
 
         res.status(200).json({
+            allDustbins: objects,
             weight: weight,
             composition: {
                 biodegradable: biodegradable,
