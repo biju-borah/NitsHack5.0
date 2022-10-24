@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div class="container-fluid" id="main">
-        <div class="row row-offcanvas row-offcanvas-left">
+      <div className="container-fluid" id="main">
+        <div className="row row-offcanvas row-offcanvas-left">
           <Sidebar />
           <DashBoard />
         </div>

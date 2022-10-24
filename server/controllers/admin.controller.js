@@ -34,7 +34,8 @@ module.exports = {
                 .orderBy('timestamp','desc').limit(1)
                 .get();
             
-            response.forEach(elem=>objects.push(elem.data()));
+            const obj = dustbinIDs.find(o => o.id === elem.id);            
+            response.forEach(elem=>objects.push({...elem.data() , name: obj.data.name, capacity: obj.data.capacity}));
         }
 
         let weight = 0; 

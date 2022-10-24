@@ -4,48 +4,48 @@ import "../Sidebar/Sidebar.css";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-3">
-      <div class="flex-row d-flex">
+    <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-3">
+      <div className="flex-row d-flex">
         <button
           type="button"
-          class="navbar-toggler mr-2 "
+          className="navbar-toggler mr-2 "
           data-toggle="offcanvas"
           title="Toggle responsive left sidebar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <a
-          class="navbar-brand"
+          className="navbar-brand"
           href="#"
           title="Free Bootstrap 4 Admin Template"
         >
-          Waste Classification
+          Waste classification
         </a>
       </div>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#collapsingNavbar"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+      <div className="navbar-collapse collapse" id="collapsingNavbar">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="#">
               Dustbins
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse">
+          <li className="nav-item">
+            <a className="nav-link" href="#" data-toggle="collapse">
               Map
             </a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a
-              class="nav-link"
+              className="nav-link"
               href=""
               data-target="#myModal"
               data-toggle="modal"
@@ -53,19 +53,19 @@ export const Navbar = () => {
               About
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light text-white">
-              <i class="fab fa-google-plus-g"></i>
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light text-white">
+              <i className="fab fa-google-plus-g"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light text-white">
-              <i class="fas fa-envelope-open-text"></i>
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light text-white">
+              <i className="fas fa-envelope-open-text"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect waves-light text-white">
-              <i class="fas fa-align-justify"></i>
+          <li className="nav-item">
+            <a className="nav-link waves-effect waves-light text-white">
+              <i className="fas fa-align-justify"></i>
             </a>
           </li>
         </ul>
