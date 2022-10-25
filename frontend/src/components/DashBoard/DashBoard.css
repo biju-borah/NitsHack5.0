@@ -2,3 +2,9 @@
     height: 178px;
     padding: 10px 30px;
 }
+.chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}

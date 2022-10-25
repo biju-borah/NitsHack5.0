@@ -12,7 +12,6 @@ const Sidebar = () => {
     >
       <ul className="nav flex-column sticky-top pl-0 pt-5 p-3 mt-3 ">
         <li className="nav-item mb-2 mt-3">
-          <img src="" alt="Avatar" className="avatar"></img>
           <a className="nav-link text-secondary" href="#">
             <h5>Shibam Debnath</h5>
           </a>
